@@ -1,0 +1,122 @@
+{{!< default}}
+	
+		
+
+		<section class="bg-primary" id="about">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-lg-8 col-lg-offset-2 text-center">
+	                    <h2 class="section-heading">KEYSTONE</h2>
+	                    <hr class="light">
+	                    <p class="text-faded">This site sits on a sweet KeyStoneJS back-end which has a real handy admin panel to add projects.</p>
+	                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
+	                </div>
+	            </div>
+	        </div>
+	    </section>
+
+	<section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">We make things</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-chrome text-primary sr-icons"></i>
+                        <h3>Beautiful websites</h3>
+                        <p class="text-muted">Web Sites with Bootstrap and KeystoneJS</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+                        <h3>Get yourself out there</h3>
+                        <p class="text-muted">SEO and online media campaigns</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-apple text-primary sr-icons"></i>
+                        <h3>Iphone Apps</h3>
+                        <p class="text-muted">IPhones apps that make you go mmm</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+                        <h3>Made with Love</h3>
+                        <p class="text-muted">We love working with good people</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter text-center">
+                <h2 class="section-heading">Projects we've worked on</h2>
+                    <hr class="primary">
+                {{#each data.projects}}
+	                <div class="col-lg-4 col-sm-6">
+	                    <a id="modal-link" href="#animatedModal" type="button" data-toggle="modal" data={{name}} data-target="#myModal">
+	                        <img src={{heroImage.url}} class="img-responsive" alt="">
+	                        
+	                    </a>
+
+	                </div>   
+	            {{/each}}
+
+
+            </div>
+        </div>
+    </section>
+    
+    <section>
+	    <!-- Modal to show the portfolio on -->
+		<div id="myModal" class="modal animatedModal fade" role="dialog">
+		  <div class="modal-dialog">
+
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h4 class="modal-title">Project Header</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>Show project info here</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+
+		  </div>
+	 </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="primary">
+                    <p>Get in touch any time to find out more!</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p>555-good-times</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:your-email@your-domain.com">info@websites.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
