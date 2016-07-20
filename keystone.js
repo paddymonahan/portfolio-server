@@ -9,7 +9,6 @@ var handlebars = require('express-handlebars');
 keystone.init({
 	'name': 'portfolio',
 	'brand': 'portfolio',
-
 	'less': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
